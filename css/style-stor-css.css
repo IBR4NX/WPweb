@@ -1,0 +1,264 @@
+
+
+.home-items{
+    justify-content: space-around;
+}
+#img-shopping {
+    width: auto;
+    
+}
+.display-img{
+    padding-top: 70px;
+    padding: 70px 0 50px ;
+    height:500px  ;
+    width:100%;
+    position: relative;
+    background-color:white;
+    overflow: hidden;
+}
+.display-img .slides {
+    margin: auto;
+   display: none;
+   height: 100%;
+}
+.display-img .active{
+    display: block;
+}
+.display-img .slides{
+    -webkit-animation: fade 1s ease-in-out;
+    animation: feda 1s ease-in-out;
+}
+@keyframes feda{
+    from{
+        opacity: .4;
+
+    }to {
+        opacity: 1;
+    }
+}
+
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    min-width: 500px;
+}
+.products {
+    padding: 20px 15px  ;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.product-all{
+    display: flex;
+    border: 1px groove #ccc;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 15px;
+   max-width: 500px;
+    height: 230px ;
+    align-items: center;
+    font-size:.8em ;
+}
+.product-all img {
+    width: 110px;
+    
+    border-radius: 10%;
+}
+.product {
+    margin-left: 15px;
+    
+    
+    flex-direction: column;
+}
+.product h2 {
+    font-size: 1.2em;
+  
+}
+.product .rating {
+    color: orange;
+    font-size: 0.9em;
+    padding: 5px ;
+}
+.price {
+    color: green;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+.button-see {
+   
+    background-color:#00f5;
+    color: white;
+    padding: 7px 40px ;
+   
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px; 
+    margin: 0; 
+}
+.add-to-cart{
+    
+    width: 20%;
+    color: black;
+    background: url("../icon/icons8_shopping_cart_3.ico") no-repeat 90% center;
+    padding:7px ;
+    text-align: left;
+    font-size: .5em;
+    background-size: 50%;
+    border: 2px groove ;
+    border-radius: 5px ;
+    margin-left: 10px ;
+    float: right;
+    
+    
+}
+.h2{
+    width: 100%;
+}
+
+
+
+
+/*  */
+@media  (min-width:501px) and (max-width:768px) {
+    .product-all{
+        
+       max-width: 500px;
+       
+        height: 200px ;
+        align-items: center;
+        font-size:.7em ;
+    }
+   
+    
+    }
+   
+
+
+.cart .button-div{
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px groove black;
+    margin-bottom: 10px;
+   
+   
+}
+.cart .button-clear-checkout-closs{
+    padding: 5px;
+    border: 0;
+
+    
+}
+
+/* Add some basic styling to make the page look decent */
+
+.product h2 {
+    font-size: 18px;
+    margin-top: 0;
+}
+.product p {
+    font-size: 14px;
+    color: #666;
+}
+.cart {
+    position: fixed;
+    right: 0;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+        min-width: 300px;
+       min-height: 100px;
+       max-width: 500px;
+       max-height: 500px;
+        z-index: 10;
+        top: 66px ;
+        box-shadow:  0 0 5px ;
+        overflow-y: scroll;
+        display: none;
+
+        
+
+        
+  
+}
+.cart table {
+    
+    padding: 3px;
+    margin: 2px;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+}
+.cart td {
+    padding: 15px 10px;
+    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid black;
+    
+}
+
+
+.cart tr button {
+    position: relative;
+   right: -80px;
+   top: 10px;
+    margin: 5px ;
+    
+    padding: 2px 5px ;
+    
+}
+.payment-form {
+    
+    display:none;
+    position: fixed;
+    background-color: #bfbcbc;
+    z-index: 10;
+    margin: auto;
+    align-self: center;
+    top: 200px;
+    width: 400px;
+    padding: 20px;
+
+}
+.payment-form input {
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    float: left;
+    color: #666;
+    border-radius: 20px;
+}
+
+.payment-form button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    position: relative;
+    bottom: -28px;
+   
+
+    
+}
+.payment-form button:hover {
+    background-color: #3e8e41;
+}
+
+
+
+button.buttoncloss{
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    float: right;
+    height: max-content;
+    padding: 0;
+    background-color: #bfbcbc;
+}

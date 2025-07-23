@@ -1,0 +1,49 @@
+.form{
+    
+    padding-top: 80px ;
+    justify-content: center;
+    padding-bottom: 20px ;
+}
+body{
+
+    display: flex;
+    justify-content: center;
+}
+.form h2 {
+    padding: 10px ;
+    text-align: center;
+}
+
+iframe {
+    width: 100%;
+
+    height: 450px;
+    border: 0;
+    margin-bottom: 70px;
+}
+#map-h2 {
+    padding: 10px ;
+}
+
+input[type="text"] {
+    background: url("../icon/icons8_google_1.ico") no-repeat;
+    background-size: contain;
+    padding: 10px 40px ;
+    width: 100%;
+    font-size: 16px;
+    margin: 10px 0  ;
+    border-radius: 20px ;
+    
+}
+input[type="submit"] {
+    background: url("../icon/icons8_search.ico") no-repeat;
+    width: 40px ;
+    background-size: contain;
+    height: 30px  ;
+    border: none;
+    position: relative;
+    float: right;
+    top: -45px ;
+    right: -5px ;
+}
+

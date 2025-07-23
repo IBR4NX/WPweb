@@ -1,0 +1,144 @@
+
+@media (min-width:700px) {
+  .home-items a{
+      padding-left: 10px;
+      padding-right: 10px;
+  }
+  
+}
+@media (min-width:1000px) {
+  .home-items a{
+      padding-left: 15px;
+      padding-right: 15px;
+  }
+  
+}
+
+
+@media (max-width:769px) {
+  .header input[type="checkbox"],
+  .header .div-header .three-lines {
+      display: block;
+  }
+  .header{
+      opacity: 5;
+      z-index: 10;
+  }
+  .header .div-header {
+     
+      position: relative;
+
+  }
+
+  .header .div-header input {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      top: 10px;
+      left: -8px;
+      z-index: 2;
+      opacity: 0;
+
+  }
+
+  .header .div-header .class-lines {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      z-index: 1;
+      height: 100%;
+      justify-content: center;
+      left: -10px;
+
+  }
+
+  .header .div-header .class-lines .lines {
+      background:#000000;
+      margin: 1px;
+      padding: 0;
+      margin-bottom: 8px;
+      width: 40px;
+      height: 8px;
+      border-radius: 40px;
+      transition: transform 0.5s ease-in-out;
+
+  }
+  .header .div-header .home-items {
+      font-size: 1.em;
+     
+      border-radius: 0 20px 90px 0;
+      background-color:#637082;
+      position:relative;  
+      left: -33px;
+      padding-top: 400px;
+      padding-bottom: 100px;
+      flex-direction: column;
+      justify-items:normal;
+      transform: translate(-150%);
+      box-shadow: 0 0 5px ;
+      width: 40%;
+      min-width: 150px;
+      height: 900px;
+      transition: transform 0.5s ease-in-out;
+      overflow:hidden;
+      
+  }
+
+ 
+  .header .div-header .home-items a{
+      padding: 10px;
+      margin: 10px 30px;
+      background :none;
+      
+  }
+  .div-header .home-items a#img-home{
+      position: relative;
+      top: 10px;
+      left: 50px;
+  }
+  
+  .div-header #store{
+      position:relative;
+        padding: 0 5px ;
+        float: right;
+        
+  }
+  .div-header #login{
+     right:50px;
+      float: left;
+  
+     margin: 10px 20px 0 0;
+  }
+  .home-items a:hover{
+      margin: 0;
+    
+  }
+
+  .header .div-header input[type="checkbox"]:checked~.home-items {
+      transform: translateX(0);
+      
+      
+  }
+ 
+
+  .div-header input[type="checkbox"]:checked~.class-lines .line-1 {
+      margin: 0;
+      transform: rotate(-40deg);
+      position: relative;
+      /* background-color: white; */
+      
+      
+      
+     
+  }
+  .div-header input[type="checkbox"]:checked~.class-lines .line-2 {
+      transform: rotate(40deg);
+      margin: 0;
+      position: relative;
+      bottom: 7px;
+      /* background-color: white; */
+  }
+ 
+}
+
+

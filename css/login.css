@@ -1,0 +1,148 @@
+.header {
+    top: 0;
+   
+   
+}
+body {
+    background-color:darkgrey;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    align-items: center;
+    min-height: 600px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+.error-message {
+   
+    color:#ff0000;
+   
+    text-align: center;
+   display: none;
+   font-size: 7px;
+  
+   top: 100px;
+    border-radius: 5px;
+  
+}
+
+.login-container {
+    padding-top: 10px;
+    display: flex;
+    position: fixed;
+    width: 30%;
+    min-width: 200px;
+
+    
+    background-color:#637082;
+   padding-bottom: 20px;
+    border-radius: 20px;
+    box-shadow: 90px 0px 90px rgba(0, 0, 0, 0.1);
+   
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+
+    
+}
+
+.login-form h2 {
+    margin: 10px auto 30px;
+    padding-top: 20px;
+    font-size: 2.5em;
+    text-align: center;
+    color:darkgray;
+}
+.icon{
+    width: 20px;
+    position: relative;
+    left: 7%;
+    top: 28px;
+}
+
+
+input {
+    margin: auto;
+    width: 90%;
+    padding: 7px 20px;
+    padding-left: 10%;
+    border: 1px solid #591f1f;
+    border-radius: 10px;
+    background-color: darkgray;
+
+}
+
+
+.login-form #submit {
+    margin-top: 20px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.788), rgba(114, 5, 34, 0.909));
+    color:darkgray;
+    border-radius: 20px;
+
+}
+
+
+.login-form #submit:hover {
+    background: linear-gradient(0deg, rgba(99, 6, 6, 0.909), rgb(47, 42, 46));
+
+    text-align: center;
+    font-weight: 700;
+}
+
+.login-form input:hover {
+    background-color: rgb(163, 155, 155);
+
+}
+
+ @media (min-width: 501px) and (max-width: 768px) {
+    
+    
+    .login-form h2 {
+        font-size: 2em;
+        margin-bottom: 10px;
+        
+    }
+    .icon{
+
+        width: 20px;
+        left: 15px;
+        top: 25px;
+
+    }
+    input{
+        font-size: 12px;
+        padding-left: 15%;
+      
+    }
+    
+}
+    
+
+
+
+
+@media (max-width:500px){
+    
+    .login-form h2 {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+        
+    }
+    .icon{
+        width: 15px;
+        top: 20px;
+
+    }
+
+    
+    input{
+        font-size: 8px;
+      
+    }
+  
+}
